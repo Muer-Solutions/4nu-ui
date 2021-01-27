@@ -41,24 +41,55 @@
     margin-top: 1rem;
 }
 
+.mt {
+    margin-top: .5rem;
+}
+
 .mx-1 {
     margin: 0 1rem;
 }
 
+.ml-2 {
+    margin-left: .2rem;
+}
+
 /* font */
+
+.text-bold {
+    font-weight: 600;
+}
 
 .text-grey {
     color: #afaaa2;
+}
+
+.text-purple {
+    color: #7745FF;
 }
 
 .small {
     font-size: 1rem;
 }
 
-.small-1 {
-    font-size: .9rem;
+.medium {
+    font-size: 1rem;
 }
 
+.regular {
+    font-size: 1.3rem;
+}
+
+.small-1 {
+    font-size: .8rem;
+}
+
+.small-2 {
+    font-size: .6rem;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
 
 /* colors */
 
