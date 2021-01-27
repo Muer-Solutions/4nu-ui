@@ -1,0 +1,79 @@
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 30px;
+}
+
+/* .grid {
+
+} */
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* padding */
+
+.p-1{
+    padding: 1rem;
+}
+
+.px-1 {
+    padding: 0 1rem;
+}
+
+.pt-1 {
+    padding-top: .2rem;
+}
+
+.py-1 {
+    padding: .2rem 0;
+}
+
+.py-2 {
+    padding: 1rem 0;
+}
+
+/* margins */
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mx-1 {
+    margin: 0 1rem;
+}
+
+/* font */
+
+.text-grey {
+    color: #afaaa2;
+}
+
+.small {
+    font-size: 1rem;
+}
+
+.small-1 {
+    font-size: .9rem;
+}
+
+
+/* colors */
+
+.border-blue {
+    border-left: 12px solid #0077b6;
+}
+
+.border-yellow {
+    border-left: 12px solid #ffd500;
+}
+
+.border-lightblue {
+    border-left: 12px solid #00bbf9;
+}
+
+.border-green {
+    border-left: 10px solid #83e377;
+}
