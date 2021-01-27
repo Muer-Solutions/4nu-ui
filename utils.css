@@ -20,8 +20,14 @@
     padding: 1rem;
 }
 
+
+
 .px-1 {
     padding: 0 1rem;
+}
+
+.pl-1 {
+    padding-left: 1rem;
 }
 
 .pt-1 {
@@ -41,6 +47,10 @@
     margin-top: 1rem;
 }
 
+.mt-2 {
+    margin-top: .2rem;
+}
+
 .mt {
     margin-top: .5rem;
 }
@@ -49,11 +59,27 @@
     margin: 0 1rem;
 }
 
+.ml-1 {
+    margin-left: 1rem;
+}
+
 .ml-2 {
     margin-left: .2rem;
 }
 
 /* font */
+
+.text-grey-2 {
+    color: #999999;
+}
+
+.text-grey-3 {
+    color: rgb(129, 129, 129);
+}
+
+.text-purple-2 {
+    color: #53039e;
+}
 
 .text-bold {
     font-weight: 600;

@@ -18,6 +18,26 @@ ul {
     background: #53039e;
     width: 100%;
     height: 50px;
+    color: #fff;
+}
+
+.navbar h3 {
+    font-size: 1.5rem;
+    margin-top: .5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.navbar ul {
+    margin-top: .5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.navbar li {
+    margin: .4rem 0;
+    margin-left: 1.5rem;
+    font-size: 1rem;
 }
 
 .content {
@@ -60,9 +80,20 @@ ul {
     cursor: pointer;
 }
 
+.card-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-header > a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #000;
+}
+
 .item-actions > div {
     border: 1px solid #f4f1de;
-    padding: 1rem;
+    padding: .5rem;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -97,5 +128,15 @@ ul {
 }
 
 .view-sections > h3 {
-    margin-top: .1rem;
+    margin-top: .055rem;
+}
+
+.credit {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+}
+
+.credit > i {
+    margin-top: .040rem;
 }
