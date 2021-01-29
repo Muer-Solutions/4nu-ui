@@ -11,3 +11,13 @@ function drop(ev) {
     var data = ev.dataTransfer.getData("text");
     ev.target.appendChild(document.getElementById(data));
 }
+
+// open modal
+
+document.getElementById('button').addEventListener('click' , function () {
+    document.querySelector('.bg-modal').style.display = 'flex';
+})
+
+document.getElementById('close').addEventListener('click', function () {
+    document.querySelector('.bg-modal').style.display = 'none';
+})
