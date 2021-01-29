@@ -68,8 +68,9 @@ ul {
 .wrapper .item {
     border: 2px solid #f4f1de;
     border-radius: 10px;
-    min-width: 300px;
-    height: auto;
+    min-width: 320px;
+    min-height: auto;
+    padding: 0 1rem;
 }
 
 .card {
@@ -143,4 +144,19 @@ ul {
 .credit > i {
     margin-top: .040rem;
     color:  #999;
+}
+
+/* drag styles */
+
+.hold {
+ border: 4px solid #ccc;
+}
+
+.invisible {
+    display: none;
+}
+
+.hovered {
+    background: #f4f4f4;
+    border: 2px dashed red;
 }

@@ -78,37 +78,40 @@
 
             </section>
             <section class="wrapper">
-                <div class="item mx-1">
+                <div id="div1" class="item mx-1" ondrop="drop(event)" ondragover="allowDrop(event)">
                     <div class="item-header p-1">
                         <p class="text-bold">Fall 2020</p>
                         <p class="mt text-grey-2">4 credits</p>
                     </div>
 
-                    <div class="item-content px-1">
-                        <div class="card mt-1 border-blue">
-                            <div class="card-header">
-                                <p class="text-grey py-1">CS 110</p>
-                                <a href="#">...</a>
-                            </div>
-                            <p class="small-1 pt-1">Introduction to Computing using Python</p>
-                            <p class="small-1 pt-1"><span>4 credits</span> | <span>Fall, Spring , Summer</span></p>
+                    <div class="item-actions p-1">
+                        <div>
+                            <i class="fa fa-plus text-grey"></i>
+                            <p class="text-grey small-1">course</p>
                         </div>
-                        <div class="card mt-1 border-green">
-                            <div class="card-header">
-                                <p class="text-grey py-1">CS 110</p>
-                                <a href="#">...</a>
-                            </div>
-                            <p class="small-1 pt-1">Introduction to Computing using Python</p>
-                            <p class="small-1 pt-1"><span>4 credits</span> | <span>Fall, Spring , Summer</span></p>
+                    </div>
+                    <div id="drag1" class="card mt-1 border-blue" draggable="true" ondragstart="drag(event)">
+                        <div class="card-header">
+                            <p class="text-grey py-1">CS 110</p>
+                            <a href="#">...</a>
                         </div>
-                        <div class="card mt-1 border-lightblue">
-                            <div class="card-header">
-                                <p class="text-grey py-1">CS 110</p>
-                                <a href="#">...</a>
-                            </div>
-                            <p class="small-1 pt-1">Introduction to Computing using Python</p>
-                            <p class="small-1 pt-1"><span>4 credits</span> | <span>Fall, Spring , Summer</span></p>
+                        <p class="small-1 pt-1">Introduction to Computing using Python</p>
+                        <p class="small-1 pt-1"><span>4 credits</span> | <span>Fall, Spring , Summer</span></p>
+                    </div>
+
+                    <div id="drag2" class="card mt-1 border-green" draggable="true" ondragstart="drag(event)">
+                        <div class="card-header">
+                            <p class="text-grey py-1">CS 110</p>
+                            <a href="#">...</a>
                         </div>
+                        <p class="small-1 pt-1">Introduction to Computing using Python</p>
+                        <p class="small-1 pt-1"><span>4 credits</span> | <span>Fall, Spring , Summer</span></p>
+                    </div>
+                </div>
+                <div id="div2" class="item mx-1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <div class="item-header p-1">
+                        <p class="text-bold">Fall 2020</p>
+                        <p class="mt text-grey-2">4 credits</p>
                     </div>
 
                     <div class="item-actions p-1">
@@ -118,24 +121,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item mx-1">
-                    <div class="item-header p-1">
-                        <p class="text-bold">Fall 2020</p>
-                        <p class="mt text-grey-2">4 credits</p>
-                    </div>
-
-                    <div class="item-content px-1">
-                        
-                    </div>
-
-                    <div class="item-actions p-1">
-                        <div>
-                            <i class="fa fa-plus text-grey"></i>
-                            <p class="text-grey small-1">course</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item mx-1">
+                <div id="div3" class="item mx-1" ondrop="drop(event)" ondragover="allowDrop(event)">
                     <div class="item-header p-1">
                         <p class="text-bold">Fall 2020</p>
                         <p class="mt text-grey-2">4 credits</p>
@@ -152,41 +138,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item mx-1">
-                    <div class="item-header p-1">
-                        <p class="text-bold">Fall 2020</p>
-                        <p class="mt text-grey-2">4 credits</p>
-                    </div>
-
-                    <div class="item-content px-1">
-                        
-                    </div>
-
-                    <div class="item-actions p-1">
-                        <div>
-                            <i class="fa fa-plus text-grey"></i>
-                            <p class="text-grey small-1">course</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item mx-1">
-                    <div class="item-header p-1">
-                        <p class="text-bold">Fall 2020</p>
-                        <p class="mt text-grey-2">4 credits</p>
-                    </div>
-
-                    <div class="item-content px-1">
-                        
-                    </div>
-
-                    <div class="item-actions p-1">
-                        <div>
-                            <i class="fa fa-plus text-grey"></i>
-                            <p class="text-grey small-1">course</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item mx-1">
+                <div id="div4" class="item mx-1" ondrop="drop(event)" ondragover="allowDrop(event)">
                     <div class="item-header p-1">
                         <p class="text-bold">Fall 2020</p>
                         <p class="mt text-grey-2">4 credits</p>
@@ -206,5 +158,6 @@
             </section>
         </div>
     </div>
+    <script src="/main.js"></script>
 </body>
 </html>
