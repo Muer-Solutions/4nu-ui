@@ -62,7 +62,7 @@ ul {
     border: 1px solid #ddd;
     display: flex;
     overflow-x:scroll;
-    padding: 2rem;
+    padding: 2rem 1rem;
 }
 
 .wrapper .item {
@@ -71,6 +71,7 @@ ul {
     min-width: 320px;
     min-height: auto;
     padding: 0 1rem;
+    /* margin-top: 4rem; */
 }
 
 .card {
@@ -179,8 +180,8 @@ ul {
     height: 300px;
     background-color: #fff;
     opacity: 1;
-    border-radius: 10px;
     padding: 1rem;
+    overflow-y: auto;
 }
 
 .modal-content input {
@@ -196,4 +197,44 @@ ul {
     position: relative;
     top: 0;
     left: 450px;
+}
+
+.add-button {
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: #7745FF;
+    color: #fff;
+}
+
+.wrapper > section {
+    padding: 1rem;
+}
+
+.vl {
+    border-left: 2px solid green;
+    height: 500px;
+    margin-top: 10px;
+    margin-left: 23px;
+}
+
+.badge {
+    background-color: rgb(216, 216, 216);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: .5rem;
+    cursor: pointer;
+}
+
+.badge > p {
+    font-size: .8rem;
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    gap: .4rem;
 }

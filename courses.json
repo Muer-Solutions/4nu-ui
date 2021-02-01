@@ -1,51 +1,6 @@
-function allowDrop(ev) {
-    ev.preventDefault();
-}
-  
-function drag(ev) {
-    ev.dataTransfer.setData("text", ev.target.id);
-}
-  
-function drop(ev) {
-    ev.preventDefault();
-    var data = ev.dataTransfer.getData("text");
-    ev.target.appendChild(document.getElementById(data));
-}
-
-// open modal
-
-document.getElementById('button').addEventListener('click' , function () {
-    document.querySelector('.bg-modal').style.display = 'flex';
-})
-
-document.getElementById('button1').addEventListener('click' , function () {
-    document.querySelector('.bg-modal').style.display = 'flex';
-})
-
-document.getElementById('button2').addEventListener('click' , function () {
-    document.querySelector('.bg-modal').style.display = 'flex';
-})
-
-// document.getElementById('button3').addEventListener('click' , function () {
-//     document.querySelector('.bg-modal').style.display = 'flex';
-// })
-
-
-document.getElementById('close').addEventListener('click', function () {
-    document.querySelector('.bg-modal').style.display = 'none';
-})
-
-
-my_data = {
-    "courses": [
-    {
-        "course_id": 5,
-        "unique_id": 206984,
-        "school": "KGSM",
-        "title": "Managerial Accounting",
-        "subject": "ACCT",
-        "number": "431-0"
-    },{
+{
+    "courses":[
+        {
         "course_id": 20458,
         "unique_id": 208469,
         "school": "UC",
@@ -87,8 +42,14 @@ my_data = {
         "title": "Accounting for Decision Making",
         "subject": "ACCT",
         "number": "430-0"
-    },
-    {
+    }, {
+        "course_id": 5,
+        "unique_id": 206984,
+        "school": "KGSM",
+        "title": "Managerial Accounting",
+        "subject": "ACCT",
+        "number": "431-0"
+    }, {
         "course_id": 16,
         "unique_id": 206987,
         "school": "KGSM",
@@ -151,8 +112,7 @@ my_data = {
         "title": "Politics of Black Popular Culture",
         "subject": "AF_AM_ST",
         "number": "327-0"
-    }, 
-    {
+    }, {
         "course-id": 12460,
         "unique_id": 210361,
         "school": "WCAS",
@@ -166,42 +126,7 @@ my_data = {
         "title": "Theorizing Blackness",
         "subject": "AF_AM_ST",
         "number": "350-0"
-    }],
-  }
-
-  for (var key in my_data) {
-    for (var i = 0; i < my_data[key].length; i++) {
-            var courseName = my_data[key][i].title;
-  			var sub = my_data[key][i].subject;
-  			var num = my_data[key][i].number;
-            var badge = document.createElement('div');
-  			badge.className = 'badge';
-  			badge.innerHTML =
-    			'<p>' + sub + num + '</p>';
-  			document.getElementById(key).appendChild(badge);
     }
+    ] 
+
 }
-
-// search course
-
-document.getElementById('search-input').addEventListener('keyup', function (val) {
-    var value = val.target.value
-    console.log("Value", value)
-
-    var data = searchCourse(value, my_data)
-})
-
-// search function
-function searchCourse(value, data) {
-    var filteredData = []
-
-    for (var i = 0; i < data.length; i++){
-        value = value.toLowerCase()
-        var name = data[i].title.toLowerCase()
-
-        if (name.includes(value)){
-            filteredData.push(data[i])
-        }
-    }
-}
-
